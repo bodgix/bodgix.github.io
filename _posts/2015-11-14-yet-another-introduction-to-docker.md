@@ -7,13 +7,13 @@ description: "Creating a lab for reverse engineering and decrypting HP iLO's LDA
 keywords: "docker, HP, iLO, LDAP, OpenLDAP, schema, docker-compose, docker-machine, Linux, sysadmin"
 ---
 
-💻Docker for sysadmins
-----------------------
+Docker for sysadmins
+--------------------
 
 I've been reading and hearing a lot about Docker but haven't had a chance to use it. Until recently, I've been using Vagrant when I needed to stand up a Linux system on my laptop for playing, testing, troubleshooting etc. I especially liked Vagrant for how easy it is to make files from your local workspace available inside the Linux system.
 
-🔬Building a lab with Docker
-============================
+Building a lab with Docker
+==========================
 
 We're using quite a few HP servers in our infrastructure and recently I was trying to setup LDAP authentication for HP's iLO interface. Turns out that HP didn't allow for a lot of configuration to adapt to an existing LDAP schema, so I wanted to reverse engineer what kind of schema is required by iLO.
 
@@ -31,8 +31,8 @@ I also wanted to take a tcpdump traffic capture in case LDAP logs alone do not p
                                             ------------
 </pre>
 
-🔗Chaining containers together
-==============================
+Chaining containers together
+============================
 
 I could have created a single container for all the components, but the Docker way is to run a single process per container, as opposed to running a full operating system in a container. There are some challenges introduced with this approach, and some [argue][baseimage-docker] that it's better to run at least a minimal infrastructure like *sshd* and *rsyslog* inside your app's container, but most of the community seems to agree that it's better to separate the responsibilities and build a separate container for each responsibility.
 
@@ -215,7 +215,7 @@ And this is how it looks like when we open it in wireshark:
 
 We can see that although we used an *ldaps://* URL to connect to the LDAP server, tcpdump was capturing at the unencrypted end of the tunnel and the traffic is visible in clean text!
 
-[Q.E.D.][qed] 💥💣🎆 thank you!
+[Q.E.D.][qed] thank you!
 
 [docker-machine]:   https://docs.docker.com/machine/              "Docker machine"
 [baseimage-docker]: https://news.ycombinator.com/item?id=7258009  "baseimage-docker"
