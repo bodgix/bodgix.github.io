@@ -34,9 +34,9 @@ I also wanted to take a tcpdump traffic capture in case LDAP logs alone do not p
 Chaining containers together
 ============================
 
-I could have created a single container for all the components, but the Docker way is to run a single process per container, as opposed to running a full operating system in a container. There are some challenges introduced with this approach, and some [argue][baseimage-docker] that it's better to run at least a minimal infrastructure like *sshd* and *rsyslog* inside your apps container, but most of the community seems to agree that it's better to separate responsibilities and build a separate container for each responsibility. For example a python flask webapp, nginx web server, MySQL database each in it's own container.
+I could have created a single container for all the components, but the Docker way is to run a single process per container, as opposed to running a full operating system in a container. There are some challenges introduced with this approach, and some [argue][baseimage-docker] that it's better to run at least a minimal infrastructure like *sshd* and *rsyslog* inside your app's container, but most of the community seems to agree that it's better to separate the responsibilities and build a separate container for each responsibility.
 
-I've created 3 containers. One for each of the components.
+So I've created 3 containers. One for each of the components of my lab.
 
 #### Enter docker-compose
 
