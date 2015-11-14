@@ -213,10 +213,13 @@ And this is how it looks like when we open it in wireshark:
 
 ![wireshark](/assets/img/yet_another_introduction_to_docker/tcpdump.png)
 
-We can see that although we used an *ldaps://* URL to connect to the LDAP server, tcpdump was capturing at the unencrypted end of the tunnel and the traffic is visible in pure text!
+We can see that although we used an *ldaps://* URL to connect to the LDAP server, tcpdump was capturing at the unencrypted end of the tunnel and the traffic is visible in clean text!
+
+[Q.E.D.][qed] 💥💣🎆 thank you!
 
 [docker-machine]:   https://docs.docker.com/machine/              "Docker machine"
 [baseimage-docker]: https://news.ycombinator.com/item?id=7258009  "baseimage-docker"
 [docker-compose]:   https://docs.docker.com/compose/              "docker-compose"
 [hp_ldap]:          https://github.com/bodgix/hp_ldap             "hp_ldap github repo"
 [docker-openldap]:  https://github.com/larrycai/docker-openldap   "larrycai/docker-openldap"
+[qed]:              https://en.wikipedia.org/wiki/Q.E.D.          "which is what had to be proven"
