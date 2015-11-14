@@ -38,7 +38,7 @@ I could have created a single container for all the components, but the Docker w
 
 So I've created 3 containers. One for each of the components of my lab.
 
-#### 🎶Enter docker-compose
+#### Enter docker-compose
 
 Thanks to [docker-compose][docker-compose], it's very easy to create and orchestrate multi-container environments. It's similar in this regard to Vagrant which also let's you create multi VM projects. With docker, however, it's much more lightweight because each container is basically just a Linux process so starting containers comes without the overhead of booting an OS and also docker images do not necessarily have to contain a filesystem with the whole OS, they just need to contain binaries and libraries required by the process which is being ran inside the container.
 
