@@ -3,8 +3,8 @@ title: "Yet Another Introduction to Docker"
 layout: post
 category: linux
 tags: linux, docker, hp, ldap, ilo, openldap, management console, hardware, hardware management
-description: "Creating a lab for reverse engineering and decrypting HP iLO's LDAP requirements with Docker, docker-machine and docker-compose"
-keywords: "docker, HP, iLO, LDAP, OpenLDAP, schema, docker-compose, docker-machine, Linux, sysadmin"
+description: "A practical introduction to docker primarily targeted at devops and sysadmins. Creating a lab for reverse engineering and decrypting HP iLO's LDAP requirements with Docker, docker-machine and docker-compose"
+keywords: "docker, HP, iLO, LDAP, OpenLDAP, schema, docker-compose, docker-machine, Linux, sysadmin, practical, devops, introduction, tutorial"
 ---
 
 Docker for sysadmins
