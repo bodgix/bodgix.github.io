@@ -10,8 +10,8 @@
       <meta name="description" content="{{ site.description }}">
     {% endif %}
 
-    {% if page.keywords %}
-      <meta name="keywords" content="{{ page.keywords }}">
+    {% if page.tags %}
+      <meta name="keywords" content="{{ page.tags | join ',' }}">
     {% endif %}
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
