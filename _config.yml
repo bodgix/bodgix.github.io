@@ -3,8 +3,11 @@ title: bodgix blog
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to bodgix blog. A place for my ideas and notes.
 
-  I'm a system engineer at Workday, I'm interested in Linux, monitoring,
-  configuration management, Ruby, Perl, web and things like that.
+  I'm currenlty a Software Engineer at Workday, working primarily in Ruby
+  on a cloud infrastructure related project.
+
+  I'm a former Systems Engineer and I'm also interested in all things Linux,
+  monitoring, configuration management, Ruby, Perl, etc.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bodgix.github.io" # the base hostname & protocol for your site
 twitter_username: bodgix

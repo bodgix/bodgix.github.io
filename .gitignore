@@ -1,2 +1,13 @@
+# jekyll
 _site
 .sass-cache
+
+# Atom
+.tags
+
+# RVM
+.ruby-gemset
+.ruby-version
+
+# bundler
+.bundle
